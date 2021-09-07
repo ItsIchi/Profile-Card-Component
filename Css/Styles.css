@@ -1,0 +1,141 @@
+/* elements */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 11%, 12%);
+    text-decoration-color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    text-decoration-color: hsl(229, 23%, 23%);
+    margin: 0;
+    font-weight: 700;
+}
+
+span {
+    font-weight: normal;
+}
+
+hr {
+    margin: 0;
+    color: lightgray;
+}
+
+
+/* media */
+@media screen and (max-width: 375px) {
+    .parent {
+        padding: 0% 6%; 
+    }
+
+    .card {
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .card-top {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .profile-img-div {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+
+
+/* classes */
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.bubble-bottom {
+   position: absolute;
+   bottom: -58%;
+   left: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+.bubble-card {
+    border-radius: 18px 18px 0 0;
+    width: 100%;
+    display: flex;
+}
+
+.bubble-top {
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: block;
+    z-index: 1;
+    position: relative;
+    top: 20%;
+    align-items: center;
+}
+
+.card-bottom {
+    background-color: white;
+    border-radius: 0 0 18px 18px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.card-top {
+    margin: 0;
+}
+
+.name-part {
+    padding: 1.5rem 3rem;
+    line-height: 1.5;
+}
+
+.parent {
+    background-color: darkcyan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-img {
+    border-radius: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img-div {
+    margin: -54% auto;
+    width: 100%;
+    position: relative;
+    height: 106px;
+    align-content: center;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 50px;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    line-height: 1.5;
+}
